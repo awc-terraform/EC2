@@ -135,7 +135,7 @@ resource "aws_network_interface_sg_attachment" "dev_sg_attachment" {
   security_group_id    = element(aws_security_group.dev_instances_sg.*.id, count.index)
   network_interface_id = element(aws_instance.dev_instance.*.primary_network_interface_id, count.index)
 }
-
+#adding a comment
 
 
 
